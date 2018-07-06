@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+div {
+  display: block;
+}
+
+/* nav bar */
+nav.navbar.navbar-default {
+  background-color: hsla(0,0%,100%,.9);
+}
+
+nav.navbar.is-inView {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+nav.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-color: rgba(0,0,0,.05);
+}
+nav.navbar {
+  -webkit-transition: transform .3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: .3s transform;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s;
+}
+
+.navbar-fixed-top {
+  position: relative;
+}
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+@media screen and (min-width: 768px) {
+
+  .navbar-fixed-bottom, .navbar-fixed-top {
+    border-radius: 0;
+  }
+  .navbar-fixed-top {
+    position: fixed;
+  }
+
+  nav.navbar {
+    padding: 5px 0;
+  }
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.button {
+  border: 1px solid rgba(0,0,0,.1);
+  padding: .6em 1em .7em;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgba(0,0,0,.6);
+  font-size: 14px;
+  outline: none;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+nav.navbar .new-post-button, nav.navbar .sign-in-button {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+nav.navbar.navbar-default {
+  background-color: hsla(0,0%,100%,.9);
+}
+
+aside.main-sidebar {
+  padding-top: 2em;
+  background-color: #fafafa;
+}
+.border-top {
+  border-top: 1px solid rgba(0,0,0,.1);
+  padding-top: 1.5em;
+}
+.heading-border-b, .small-heading {
+  font-weight: 700;
+  color: rgba(0,0,0,.8);
+}
+.small-heading {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 0 0 8px;
+  font-size: 11px;
+}
+
+.tags-wrapper {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+aside.main-sidebar .sidebar-top-stories ul {
+  list-style: none;
+  padding: 1em;
+}
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* sign in */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s,visibility 0s .3s;
+  -o-transition: opacity .3s,visibility 0s .3s;
+  transition: opacity .3s,visibility 0s .3s;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: hsla(0,0%,100%,.95);
+  z-index: 10000;
+}
+
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  color: rgba(0,0,0,.44);
+  font-size: 22px;
+  background-color: transparent;
+  outline: none;
+  z-index: 100;
+}
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.grayed-heading {
+  color: rgba(0,0,0,.44);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: .4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: opacity .3s,-webkit-transform .3s;
+  transition: opacity .3s,-webkit-transform .3s;
+  -o-transition: transform .3s,opacity .3s;
+  transition: transform .3s,opacity .3s;
+  transition: transform .3s,opacity .3s,-webkit-transform .3s;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.omniauth-button-group {
+  text-align: center;
+}
+
+.article {
+  float: left;
+  margin: 0 auto;
+  padding-right: 40px;
+  border-right: 1px solid #eee;
+}
+.sidebar {
+    float: left;
+    height: auto;
+}
